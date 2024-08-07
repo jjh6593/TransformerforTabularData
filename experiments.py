@@ -1,0 +1,47 @@
+experiments = [
+    {
+        'pretrain': True,
+        'posttrain': True,
+        'pretrain_epochs': 100,
+        'posttrain_epochs': 2000,
+        'learning_rate': 0.001,
+        'batch_size': 32,
+        'mask_ratio': 0.1,
+        'mask_value': 0,
+        'train_split': 0.8,
+        'hidden_dim': 64,
+        'pf_dim': 128,
+        'num_heads': 4,
+        'num_layers': 1,
+        'dropout_ratio': 0.1,
+        'random_seed': 42,
+        'data_path': './learning.csv',
+        'use_cuda': True,
+        'save_folder': 'experiment1',
+        'pretrain_model_name': 'pretrain_model_1.pth',
+        'posttrain_model_name': 'posttrain_model_1.pth'
+    },
+    {
+        'pretrain': True,
+        'posttrain': True,
+        'pretrain_epochs': 100,
+        'posttrain_epochs': 2000,
+        'learning_rate': 0.0001,
+        'batch_size': 16,
+        'mask_ratio': 0.2,
+        'mask_value': 0,
+        'train_split': 0.8,
+        'hidden_dim': 128,
+        'pf_dim': 256,
+        'num_heads': 8,
+        'num_layers': 2,
+        'dropout_ratio': 0.2,
+        'random_seed': 42,
+        'data_path': './learning.csv',
+        'use_cuda': True,
+        'save_folder': 'experiment2',
+        'pretrain_model_name': 'pretrain_model_2.pth',
+        'posttrain_model_name': 'posttrain_model_2.pth'
+    }
+    # 필요한 만큼 추가
+]
